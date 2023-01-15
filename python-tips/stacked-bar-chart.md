@@ -1,5 +1,6 @@
 # stacked bar chart
 
+````python
 ```python
 import matplotlib.pyplot as plt
 
@@ -28,8 +29,8 @@ ax.bar(x, up_y, width, bottom=bottom_y, color='r', lw = 0.5, linestyle='-', edge
 
 ax2 = ax.twinx()
 # member percentage plot
-up_ratio = up_y / (bottom_y + up_y)
-line = ax2.plot(x, up_ratio, marker='o', color='g')
+bottom_ratio = bottom_y / (bottom_y + up_y)
+line = ax2.plot(x, bottom_ratio, marker='o', color='g')
 #text
 # for x_pos, y_pos in line[0].get_xydata():
 #     plt.text(x_pos+0.1, y_pos-0.008, f'{y_pos:.2f}')
@@ -46,5 +47,6 @@ ax.legend(fontsize=13, loc='upper right')
 
 plt.show()
 ```
+````
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
