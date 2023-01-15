@@ -4,6 +4,10 @@
 
 [Vasile, F., Smirnova, E., & Conneau, A. (2016, September). Meta-prod2vec: Product embeddings using side-information for recommendation. In Proceedings of the 10th ACM conference on recommender systems](https://arxiv.org/pdf/1607.07326.pdf)
 
+호텔데이터 돌려서 prod2vec, metaprod2vec 클러스터링 비교하기
+
+![](<../.gitbook/assets/image (14).png>)
+
 ## 3 PROPOSED APPROACH
 
 ### 3.1 Prod2Vec 복습 <a href="#prod2vec" id="prod2vec"></a>
@@ -59,7 +63,7 @@ $$L_{J|I}$$ : 일반 Skip-gram의 loss
 
 $$L_{I|M}$$ : $$c_i$$(중심 메타)가 출현했을 때 $$p_i$$(중심 아이템)가 출현할 확률 모델링
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (14) (2).png>)
 
 
 
