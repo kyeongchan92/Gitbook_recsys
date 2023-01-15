@@ -1,6 +1,6 @@
 # 데이터 과학을 위한 통계 목차 정리
 
-![](<../.gitbook/assets/image (3).png>)[https://product.kyobobook.co.kr/detail/S000001810380](https://product.kyobobook.co.kr/detail/S000001810380)
+![](<../.gitbook/assets/image (3) (5).png>)[https://product.kyobobook.co.kr/detail/S000001810380](https://product.kyobobook.co.kr/detail/S000001810380)
 
 ## 2. 데이터와 표본분포
 
