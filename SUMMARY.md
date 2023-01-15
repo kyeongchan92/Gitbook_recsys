@@ -6,6 +6,7 @@
   * [BCELoss](undefined/bceloss.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
   * [데이터 과학을 위한 통계 목차 정리](undefined/undefined.md)
+  * [Neural Network에서의 Epoch](undefined/neural-network-epoch.md)
   * [🎆 Graph 지식](undefined/graph/README.md)
     * [Gprah Laplacian (작성중)](undefined/graph/gprah-laplacian.md)
     * [DGCNN (2018)](undefined/graph/dgcnn-2018.md)
