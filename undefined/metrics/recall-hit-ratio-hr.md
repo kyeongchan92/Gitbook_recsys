@@ -1,6 +1,6 @@
 # 추천에서의 Recall (Hit Ratio, HR)
 
-## 일반적인 Recall
+## 1. Implicit data에서의 Recall
 
 ### train test split
 
@@ -26,7 +26,7 @@ k를 3으로 하고 Recall@3을 구해보자. 모델이 사용확률 높은 순�
 
 아까 **테스트로 분류된 사용한 아이템**들, I, K, G을 '정답셋'이라고 하자. Recall은 예측한 아이템들과 정답셋의 교집합 개수가 분자로, k가 분모로 계산된 값이다.
 
-## Sequential 추천에서의 Recall
+## 2. Sequential 추천에서의 Recall
 
 
 
