@@ -1,6 +1,10 @@
-# 이웃 기반 협업 필터링
+---
+description: >-
+  차루 아가르왈의 '추천시스템 (recommender systems)' 책의
+  내용입니다(https://product.kyobobook.co.kr/detail/S000001805083).
+---
 
-차루 아가르왈의 저서 '[추천시스템 (recommender systems)](https://product.kyobobook.co.kr/detail/S000001805083)' 책의 내용입니다.
+# 이웃 기반 협업 필터링
 
 ## 이웃 기반 협업 필터링(=메모리 기반 알고리즘)
 
