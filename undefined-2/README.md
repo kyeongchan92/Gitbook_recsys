@@ -1,4 +1,4 @@
-# 딥러닝을 이용한 추천시스템
+# 🚲 딥러닝을 이용한 추천시스템
 
 [Naumov, M., Mudigere, D., Shi, H. J. M., Huang, J., Sundaraman, N., Park, J., ... & Smelyanskiy, M. (2019). Deep learning recommendation model for personalization and recommendation systems. arXiv preprint arXiv:1906.00091.(페이스북, 인용수 327)](https://arxiv.org/pdf/1906.00091.pdf)
 

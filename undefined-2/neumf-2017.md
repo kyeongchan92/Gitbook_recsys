@@ -20,7 +20,7 @@ y_{ui}=
 \end{cases}
 $$
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 파라미터 $$\Theta$$를 추정하기 위해서, 기존의 접근법들은 일반적으로 목적함수를 최적화하는 머신러닝 패러다임을 따랐다. 목적함수의 두 가지 유형이 본 논문에서 가장 많이 다뤄질 것이다 - pointwise loss \[14, 19], pairwise loss \[27, 33]. 명시적 피드백에 대한 많은 연구들의 연장선으로써, pointwise learning 방법은 보통 $$\hat{y}_{ui}$$와 타겟 값 $$y_{ui}$$ 사이의 squared loss를 최소화하는 회귀 방식을 따른다. 네거티브 데이터를 안쓰는 대신, 관측되지 않은 모든 엔트리 또는 샘플링된 인스턴스를 네거티브 피드백으로 사용한다 \[14]. pairwise learning \[27, 44]의 아이디어는 관측된 엔트리가 관측되지 않은 것보다 높게 랭크되어야 한다는 것이다. 그러게 하면, $$\hat{y}_{ui}$$와 $$y_{ui}$$ 사이의 손실을 최소화하는 대신, 관측된 엔트리 $$\hat{y}_{ui}$$와 관측되지 않은 엔트리 $$y_{ui}$$사이의 margin, 즉 간격을 최대화한다.
 

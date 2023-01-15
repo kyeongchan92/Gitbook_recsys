@@ -1,4 +1,4 @@
-# BERT4Rec(2019)
+# ⏳ BERT4Rec(2019)
 
 [paper](https://dl.acm.org/doi/pdf/10.1145/3357384.3357895)
 

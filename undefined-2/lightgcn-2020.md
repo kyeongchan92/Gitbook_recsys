@@ -1,4 +1,4 @@
-# LightGCN(2020)(작성중)
+# 🔗 LightGCN(2020)(작성중)
 
 [paper](https://dl.acm.org/doi/pdf/10.1145/3397271.3401063)
 

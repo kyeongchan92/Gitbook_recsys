@@ -28,7 +28,7 @@ prod2vec 정리 글에서 아래 수식이 목적함수이고 이를 최대화 �
 
 Xᵢ는 상품 i의 출현 빈도이고, Xᵢⱼᵖᵒˢ는 아이템 쌍 (i, j)가 함께 출현한 빈도이다. I는 인풋 공간이고 J는 아웃풋 공간이다. pᵢⱼ는 훈련데이터 상에서 구해지는 경험적 조건부분포(empirical conditional distribution)이다. qᵢⱼ는 모델이 예측하는 조건부분포(modeled conditional distribution)이다.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (3).png>)
 
 위 손실함수를 통해서 상품들의 입력 공간이 학습되어, 중앙에 위치한 단어는 주변 단어를 예측할 수 있는 능력을 갖추게 된다. 오직 히든레이어 하나와 소프트맥스 출력층 하나를 가지면서 말이다.
 
