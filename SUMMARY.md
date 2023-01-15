@@ -1,9 +1,8 @@
 # Table of contents
 
 * [데이터사이언스 기본](README.md)
-  * [Metrics](undefined/metrics/README.md)
-    * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
-    * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
+  * [추천에서의 Recall (Hit Ratio, HR)](undefined/recall-hit-ratio-hr.md)
+  * [Implicit data에서의 nDCG](undefined/implicit-data-ndcg.md)
   * [BCELoss](undefined/bceloss.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
   * [데이터 과학을 위한 통계 목차 정리](undefined/undefined.md)

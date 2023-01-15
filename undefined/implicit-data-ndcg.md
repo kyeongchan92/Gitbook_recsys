@@ -10,21 +10,21 @@ $$
 
 $$Z_K$$는 제일 좋은 성능일 때를 1로 만들기 위한 normalizer이다. $$rel_i$$는 $$i$$번째 아이템의 graded relavance이다. (implicit data이기 때문에) $$r_i$$는 1 또는 0이며, 1일 때는 아이템이 test set에 존재할 때이고, 0일 때는 그렇지 않을 때이다.
 
-예를 들어 $$K=5$$라고 해보자.
-
 ## 예시
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+예를 들어 $$K=5$$라고 해보자.
 
-다음과 같이 $$t$$라는 테스트 유저가 있고, 이 유저는 0\~4까지 사용했고 5\~9 아이템은 사용하지 않았다고 해보자.
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+다음과 같이 $$t$$라는 테스트 유저가 있고, 이 유저는 0\~4까지 사용(클릭)했고 5\~9 아이템은 사용하지 않았다고 해보자.
 
 
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 사용한 아이템을 train과 test로 나누게 될 것이다. 그리고 train으로 학습이 진행될 것이다. 이제 테스트 시간이 왔다고 하자.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 k = 5
@@ -32,7 +32,7 @@ actual_set = set([3, 4])
 pred = [6, 3, 8, 4, 5]
 ```
 
-모델이 예측한 결과가 \[6, 3, 8, 4, 5]라고 하자. 순서는? 모델에 따라 다르겠지만 implicit data(1 or 0)인 경우 예측 확률이 1에 가까운 순서이다. 그리고 테스트 유저가 실제로 사용했고 test 셋으로 분류된 아이템은 actual\_set = set(\[3, 4])였다. 이 actual set에서 순서는 사용되지 않는다.
+모델이 예측한 결과가 \[6, 3, 8, 4, 5]라고 하자. 순서는? 모델에 따라 다르겠지만 implicit data(1 or 0)인 경우 예측 확률이 1에 가까운 순서로 정렬한다. 그리고 테스트 유저가 실제로 사용했고 test 셋으로 분류된 아이템은 actual\_set = set(\[3, 4])였다. 이 actual set에서 순서는 사용되지 않는다.
 
 
 
