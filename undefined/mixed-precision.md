@@ -40,7 +40,7 @@ def train(model: nn.Module) -> None:
 <pre class="language-python"><code class="lang-python">model = Net().cuda()
 optimizer = optim.SGD(model.parameters(), ...)
 
-<strong><a data-footnote-ref href="#user-content-fn-1">scaler = GradScaler()</a>  # &#x3C;1>
+<strong>scaler = GradScaler()  # &#x3C;1>
 </strong>
 for epoch in epochs:
     for input, target in data:
@@ -64,7 +64,7 @@ for epoch in epochs:
 
 #### [Gradient clipping](https://pytorch.org/docs/stable/notes/amp\_examples.html#id4)
 
-<pre class="language-python"><code class="lang-python">scaler = GradScaler()
+<pre class="language-python" data-overflow="wrap"><code class="lang-python">scaler = GradScaler()
 
 for epoch in epochs:
     for input, target in data:
@@ -74,13 +74,16 @@ for epoch in epochs:
             loss = loss_fn(output, target)
             
         scaler.scale(loss).backward()
-<strong>        scaler.unscale_(optimizer)
-</strong><strong>        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)
-</strong>        scaler.step(optimizer)
-        scaler.update()
+<strong>        scaler.unscale_(optimizer)  # &#x3C;1>
+</strong><strong>        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)  # &#x3C;2>
+</strong>        scaler.step(optimizer)  # &#x3C;3>
+        scaler.update()  # &#x3C;4>
 </code></pre>
 
-
+1. optimizer에 할당된 파라미터의 gradients를 unscale한다(in-place 방식).
+2. 1번을 수행했기 때문에 평소처럼 clipping을 수행한다.
+3. 만약 gradient가 infs나 NaNs를 포함하고 있어서 optimizer.step()을 생략하더라도, 1번을 수행했기 때문에 scaler.step()은 optimizer에 할당된 파라미터의 gradient를 unscale하지 않는다.
+4. 다음 iteration을 위해 scale을 업데이트한다.
 
 
 
@@ -93,6 +96,3 @@ for epoch in epochs:
 
 
 c\
-
-
-[^1]: 학습 시작 부분에서 GradScaler를 생성한다.
