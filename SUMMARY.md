@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌿 베이스 지식들(잡것들)](README.md)
+* [🌿 베이스 지식들](README.md)
   * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [BCELoss](undefined/bceloss.md)
