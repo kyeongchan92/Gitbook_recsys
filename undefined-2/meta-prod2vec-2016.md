@@ -53,7 +53,7 @@ M은 메타데이터 공간이다. 예를 들면 artist id같은 것이다.
 
 손실함수를 하나하나 살펴보자. 상품 p의 시퀀스는 아래 그림과 같고, 모든 상품은 카테고리가 하나씩 배정되어 있다고 하자.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>데이터 예시. p는 상품, c는 카테고리</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (4).png" alt=""><figcaption><p>데이터 예시. p는 상품, c는 카테고리</p></figcaption></figure>
 
 &#x20;
 

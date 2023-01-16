@@ -1,5 +1,9 @@
 # stacked bar chart
 
+&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ````python
 ```python
 import matplotlib.pyplot as plt
@@ -48,5 +52,7 @@ ax.legend(fontsize=13, loc='upper right')
 plt.show()
 ```
 ````
+
+
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
