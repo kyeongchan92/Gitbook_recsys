@@ -4,6 +4,7 @@
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+{% code overflow="wrap" lineNumbers="true" %}
 ````python
 ```python
 import matplotlib.pyplot as plt
@@ -52,6 +53,7 @@ ax.legend(fontsize=13, loc='upper right')
 plt.show()
 ```
 ````
+{% endcode %}
 
 
 
