@@ -1,5 +1,6 @@
 # plotly sankey diagram
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import plotly.graph_objects as go
 
@@ -20,11 +21,13 @@ fig = go.Figure(data=[go.Sankey(
 fig.update_layout(title_text="Basic Sankey Diagram", font_size=10)
 fig.show()
 ```
+{% endcode %}
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import plotly.graph_objects as go
 import urllib, json
@@ -64,5 +67,6 @@ fig.update_layout(title_text="Energy forecast for 2050<br>Source: Department of 
                   font_size=10)
 fig.show()
 ```
+{% endcode %}
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
