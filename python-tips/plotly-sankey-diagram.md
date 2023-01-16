@@ -65,4 +65,4 @@ fig.update_layout(title_text="Energy forecast for 2050<br>Source: Department of 
 fig.show()
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
