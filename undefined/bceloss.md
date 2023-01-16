@@ -6,19 +6,16 @@ description: Binary Cross Entropy Loss
 
 ## 사용법
 
-{% code lineNumbers="true" %}
-```python
-import torch.nn as nn
+<pre class="language-python" data-line-numbers><code class="lang-python">import torch.nn as nn
 
 # 선언
 m = nn.Sigmoid()
 criterion = nn.BCELoss()
 
 # 사용
-loss = criterion(m(output), label)
+loss = criterion(m(<a data-footnote-ref href="#user-content-fn-1">output</a>), label)
 loss.backward()
-```
-{% endcode %}
+</code></pre>
 
 output은 모델의 아웃풋이다.
 
@@ -148,3 +145,6 @@ np.mean([2.0062, 0.1735, 2.3961])
 
 
 
+
+
+[^1]: model's output
