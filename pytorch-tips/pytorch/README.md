@@ -1,3 +1,4 @@
-# pytorch 메모리 관리
+# pytorch 메모리 관리(작성중)
 
-[https://velog.io/@helloybz/CUDA-Memory-management-with-PyTorch](https://velog.io/@helloybz/CUDA-Memory-management-with-PyTorch)
+{% embed url="https://velog.io/@helloybz/CUDA-Memory-management-with-PyTorch" %}
+
