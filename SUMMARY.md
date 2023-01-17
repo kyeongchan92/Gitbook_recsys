@@ -7,6 +7,7 @@
   * [Matrix Factorization](undefined/matrix-factorization.md)
   * [데이터 과학을 위한 통계 목차 정리](undefined/undefined.md)
   * [Neural Network에서의 Epoch](undefined/neural-network-epoch.md)
+  * [batch size의 의미와 학습에 미치는 영향](undefined/batch-size.md)
   * [기울기 폭발과 소실, 그리고 cliping(작성중)](undefined/cliping.md)
   * [activation의 역할(작성중)](undefined/activation.md)
   * [Mixed Precision](undefined/mixed-precision.md)
