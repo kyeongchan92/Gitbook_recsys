@@ -16,6 +16,12 @@
 ## [Effect of batch size on training dynamics - Medium](https://www.google.com/url?sa=t\&rct=j\&q=\&esrc=s\&source=web\&cd=\&ved=2ahUKEwjMzLat0838AhVck1YBHdrvBLMQFnoECCcQAw\&url=https%3A%2F%2Fmedium.com%2Fmini-distill%2Feffect-of-batch-size-on-training-dynamics-21c14f7a716e\&usg=AOvVaw2Dyfvguf15ioSp4DtKPEG6)
 
 * 큰 배치사이즈를 사용한다는 것은 모델이 매우 큰 gradient를 업데이트한다는 것을 의미한다.&#x20;
+* 배치사이즈가 크면 무슨 일이 벌어지는가? --> 일반화 성능이 낮아진다. 일반화 성능이 낮다는 것은 학습데이터 오버피팅이 일어난다는 것이다. 또는, 로컬 미니멈에 빠진다.\[1]
+* 배치사이즈가 작으면 무슨 일이 벌어지는가? --> gradient에 노이즈가 많이 낀다.\[2]
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+\[1][How to Break GPU Memory Boundaries Even with Large Batch Sizes](https://towardsdatascience.com/how-to-break-gpu-memory-boundaries-even-with-large-batch-sizes-7a9c27a400ce)
+
+\[2][Possible for batch size of neural network to be too small?](https://datascience.stackexchange.com/questions/52884/possible-for-batch-size-of-neural-network-to-be-too-small)
 
