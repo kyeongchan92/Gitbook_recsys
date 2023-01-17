@@ -4,6 +4,7 @@
   * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [BCELoss](undefined/bceloss.md)
+  * [Loss의 reduction 옵션](undefined/loss-reduction.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
   * [데이터 과학을 위한 통계 목차 정리](undefined/undefined.md)
   * [Neural Network에서의 Epoch](undefined/neural-network-epoch.md)
