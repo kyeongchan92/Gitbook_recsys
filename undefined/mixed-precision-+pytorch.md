@@ -1,4 +1,4 @@
-# Mixed Precision(+torch)
+# Mixed Precision(+pytorch)
 
 ## Paper
 
@@ -12,6 +12,7 @@
 
 ## 일반적인 학습
 
+{% code lineNumbers="true" %}
 ```python
 import copy
 import time
@@ -42,12 +43,13 @@ def train(model: nn.Module) -> None:
         torch.nn.utils.clip_grad_norm_(model.parameters(), 0.5)
         optimizer.step()
 ```
+{% endcode %}
 
 
 
 ### [Typical Mixed Precision Training](https://pytorch.org/docs/stable/notes/amp\_examples.html#id2)
 
-<pre class="language-python"><code class="lang-python">model = Net().cuda()
+<pre class="language-python" data-line-numbers><code class="lang-python">model = Net().cuda()
 optimizer = optim.SGD(model.parameters(), ...)
 
 <strong>scaler = GradScaler()  # &#x3C;1>
@@ -66,7 +68,7 @@ for epoch in epochs:
 
 1. 학습 시작 부분에서 GradScaler를 생성한다.
 2. autocasting과 함께 순전파 한다.
-3. loss를 scaling한다. scaled loss가 backward()되어 scaled gradients가 생성된다. autocast하에서의 역전파는 권장되지 않는다.
+3. loss를 scaling한다. scaled loss가 backward()되어 scaled gradients가 생성된다. autocast하에서의 역전파는 권장되지 않는다. **참고로 loss\_fn으로 구한 loss는 float32이다. pytorch의 loss객체는 계산할 때 float32로 바꾼다고 한다.**
 4. scaler.step은 가장 일단 optimizer에 할당된 파라미터의 gradients를 unscale한다. 만약 gradients가 infs 또는 NaNs이 아니라면 optimizer.step()이 실행되고, 그렇지 않으면 optimizer.step()은 생략된다.
 5. 다음 iteration을 위해 scale을 업데이트한다.
 
@@ -74,7 +76,7 @@ for epoch in epochs:
 
 #### [Gradient clipping](https://pytorch.org/docs/stable/notes/amp\_examples.html#id4)
 
-<pre class="language-python" data-overflow="wrap"><code class="lang-python">scaler = GradScaler()
+<pre class="language-python" data-overflow="wrap" data-line-numbers><code class="lang-python">scaler = GradScaler()
 
 for epoch in epochs:
     for input, target in data:
@@ -99,10 +101,12 @@ for epoch in epochs:
 
 
 
+## Ref
 
+{% embed url="https://hoya012.github.io/blog/Mixed-Precision-Training/" %}
 
+[Docs ](https://pytorch.org/docs/stable/index.html)> [CUDA Automatic Mixed Precision examples](https://pytorch.org/docs/stable/notes/amp\_examples.html)
 
+[Tutorials ](https://pytorch.org/tutorials/index.html)> [PyTorch Recipes](https://pytorch.org/tutorials/recipes/recipes\_index.html) > [Automatic Mixed Precision](https://pytorch.org/tutorials/recipes/recipes/amp\_recipe.html)
 
-
-
-c\
+{% embed url="https://effectivemachinelearning.com/PyTorch/8._Faster_training_with_mixed_precision" %}

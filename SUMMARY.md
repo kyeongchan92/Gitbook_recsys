@@ -11,7 +11,7 @@
   * [기울기 폭발과 소실, 그리고 clipping(작성중)](undefined/clipping.md)
   * [Mixed Precision](undefined/mixed-precision.md)
   * [activation의 역할(작성중)](undefined/activation.md)
-  * [Mixed Precision(+torch)](undefined/mixed-precision-+torch.md)
+  * [Mixed Precision(+pytorch)](undefined/mixed-precision-+pytorch.md)
   * [🎆 Graph 지식](undefined/graph/README.md)
     * [Gprah Laplacian (작성중)](undefined/graph/gprah-laplacian.md)
     * [DGCNN (2018)](undefined/graph/dgcnn-2018.md)
