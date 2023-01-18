@@ -1,4 +1,4 @@
-# Node2vec
+# Node2vec(2016)
 
 ## Paper
 

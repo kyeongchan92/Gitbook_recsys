@@ -1,6 +1,7 @@
 # Table of contents
 
-* [🌿 베이스 지식들](README.md)
+* [👋 Welcome Page](README.md)
+* [🌿 베이스 지식들](<README (1).md>)
   * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [Loss의 reduction 옵션](undefined/loss-reduction.md)
@@ -15,8 +16,8 @@
 * [⌚ 메모리 기반 추천시스템](undefined-1/README.md)
   * [이웃 기반 협업 필터링](undefined-1/undefined.md)
 * [🚲 딥러닝을 이용한 추천시스템](undefined-2/README.md)
-  * [FPMC(2010)(작성중)](undefined-2/fpmc-2010.md)
-  * [Prod2Vec(2015)](undefined-2/prod2vec-2015.md)
+  * [FPMC(2010)(작성중)](undefined-2/fpmc.md)
+  * [Prod2Vec(2015)](undefined-2/prod2vec.md)
   * [Meta-Prod2Vec(2016)](undefined-2/meta-prod2vec-2016.md)
   * [NeuMF(2017)](undefined-2/neumf-2017.md)
   * [⏳ NARM(2017)](undefined-2/narm-2017.md)
@@ -37,6 +38,6 @@
   * [stacked bar chart](python-tips/stacked-bar-chart.md)
 * [🎆 Graph 지식](graph/README.md)
   * [Gprah Laplacian (작성중)](graph/gprah-laplacian.md)
-  * [Node2vec(2016)](graph/node2vec-2016.md)
+  * [Node2vec(2016)](graph/node2vec.md)
   * [DGCNN (2018)](graph/dgcnn-2018.md)
   * [SEAL(2018)](graph/seal-2018.md)
