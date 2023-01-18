@@ -32,6 +32,7 @@
   * [torch.nn: Parameter vs. Linear vs. Embedding](pytorch-tips/torch.nn-parameter-vs.-linear-vs.-embedding.md)
   * [model.train() vs model.eval() vs torch.no\_grad()](pytorch-tips/model.train-vs-model.eval-vs-torch.no\_grad.md)
 * [🐍 Python tips](python-tips/README.md)
+  * [Geopandas](python-tips/geopandas.md)
   * [plotly sankey diagram](python-tips/plotly-sankey-diagram.md)
   * [stacked bar chart](python-tips/stacked-bar-chart.md)
 * [🎆 Graph 지식](graph/README.md)
