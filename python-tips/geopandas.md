@@ -1,5 +1,7 @@
 # Geopandas
 
+{% embed url="https://www.kaggle.com/code/keshavramaiah/hotel-recommender/notebook" %}
+
 ```python
 from sklearn.cluster import KMeans
 import numpy as np
