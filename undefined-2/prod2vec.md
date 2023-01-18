@@ -36,7 +36,7 @@ prod2vec 모델은 NLP 분야에서의 용어를 빌리자면 구매 시퀀스�
 \
 
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 #### **bagged-prod2vec** <a href="#bagged-prod2vec" id="bagged-prod2vec"></a>
 
@@ -46,7 +46,7 @@ prod2vec 모델은 NLP 분야에서의 용어를 빌리자면 구매 시퀀스�
 
 ℙ(eₘ₊ⱼ|pₘₖ)는 이웃하고 있는 영수증 eₘ₊ⱼ를 관측할 확률이다. 영수증 eₘ₊ⱼ은 상품으로 구성되어 있으므로 eₘ₊ⱼ=(pₘ₊ⱼ,₁, …, pₘ₊ⱼ,\_Tₘ)이다. 상품 pₘₖ가 주어졌을 때 왜 한 단계 더 높은 수준인 영수증을 관측할 확률인가 헷갈릴 수도 있지만, ℙ(eₘ₊ⱼ|pₘₖ)는 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 상품 구매의 시간적 정보를 반영하기 위해서 directed 언어 모델을 제안했다. 이는 컨텍스트로서 미래의 상품만 사용하겠다는 것이다\[12]. 위처럼 수정함으로써 상품 임베딩값은 미래 있을 구매 여부를 예측할 수 있도록 학습된다.
 

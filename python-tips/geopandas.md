@@ -7,10 +7,7 @@ import numpy as np
 wv = metap2v_listing.WPi.weight.detach().cpu().numpy()
 
 # clustering ##################################################
-# htl_mg_korea = hotel_merge[hotel_merge['CNTRY_CD'].map(lambda x: x in ['VN','TH','PH', 'KH'])]
 htl_mg_korea = hotel_merge[hotel_merge['CNTRY_CD'] == 'KR']
-
-
 
 
 kr_item_ids = np.asarray(htl_mg_korea['item_idx'])
@@ -60,4 +57,4 @@ plt.show()
 
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
