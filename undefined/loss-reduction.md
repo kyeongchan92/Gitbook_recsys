@@ -1,7 +1,5 @@
 # Loss의 reduction 옵션
 
-##
-
 ## &#x20;출처
 
 {% embed url="https://stats.stackexchange.com/questions/358786/mean-or-sum-of-gradients-for-weight-updates-in-sgd" %}
