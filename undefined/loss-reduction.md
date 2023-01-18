@@ -6,9 +6,7 @@
 
 ## 궁금증
 
-BCELoss를 정리할 때, Pytorch의 Loss객체에는 reduction이라는 옵션이 있었던 걸 알 수 있다.
-
-{% embed url="https://app.gitbook.com/o/9pPdlAX9tD5yWurWffl2/s/DrsfkmCAUYPdnNOPwzWG/~/changes/AuQK0TVBMDhYBYnQhCN5/undefined/bceloss" %}
+[BCELoss](https://app.gitbook.com/o/9pPdlAX9tD5yWurWffl2/s/DrsfkmCAUYPdnNOPwzWG/\~/changes/AuQK0TVBMDhYBYnQhCN5/undefined/bceloss)를 정리할 때, Pytorch의 Loss객체에는 reduction이라는 옵션이 있었던 걸 알 수 있다.
 
 디폴트 값은 mean이지만 sum으로 사용할 수도 있는데 이 둘의 차이는 뭘까? 혹시 loss를 더한 것과 평균낸 것이 학습에 다른 영향을 미치는 것은 아닐까? 결론부터 말하자면 이 논의는 '별로 중요하지 않다.'
 
