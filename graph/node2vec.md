@@ -2,11 +2,13 @@
 
 ## Paper
 
-[https://dl.acm.org/doi/pdf/10.1145/2939672.2939754](https://dl.acm.org/doi/pdf/10.1145/2939672.2939754)
+{% embed url="https://dl.acm.org/doi/pdf/10.1145/2939672.2939754" %}
+
+## **노드 임베딩이란?**
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-**노드 임베딩이란?**
+****
 
 그래프의 각 노드가 임의의 인코더를 통과하여 임베딩 공간에 위치하는 벡터로 바뀌는 과정이다.\
 그리고 이 과정은 그래프에서 유사한 노드들이 임베딩 공간에서도 근처에 있도록 맵핑하고자 하는 것이다.
