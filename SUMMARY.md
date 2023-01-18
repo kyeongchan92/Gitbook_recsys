@@ -27,7 +27,7 @@
   * [🔗 NGCF(2019)](undefined-2/ngcf-2019.md)
   * [⏳ BERT4Rec(2019)](undefined-2/bert4rec-2019.md)
   * [🔗 LightGCN(2020)(작성중)](undefined-2/lightgcn-2020.md)
-* [👒 Pytorch tips](pytorch-tips/README.md)
+* [🔥 Pytorch tips](pytorch-tips/README.md)
   * [pytorch 메모리 관리(작성중)](pytorch-tips/pytorch/README.md)
     * [BCELoss](pytorch-tips/pytorch/bceloss.md)
   * [언제 .to(device)를 쓰면 좋을까?(작성중)](pytorch-tips/.to-device.md)
