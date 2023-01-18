@@ -37,6 +37,6 @@
   * [stacked bar chart](python-tips/stacked-bar-chart.md)
 * [🎆 Graph 지식](graph/README.md)
   * [Gprah Laplacian (작성중)](graph/gprah-laplacian.md)
-  * [Node2vec](graph/node2vec.md)
+  * [Node2vec(2016)](graph/node2vec-2016.md)
   * [DGCNN (2018)](graph/dgcnn-2018.md)
   * [SEAL(2018)](graph/seal-2018.md)
