@@ -4,13 +4,13 @@
 
 [Vasile, F., Smirnova, E., & Conneau, A. (2016, September). Meta-prod2vec: Product embeddings using side-information for recommendation. In Proceedings of the 10th ACM conference on recommender systems](https://arxiv.org/pdf/1607.07326.pdf)
 
-호텔데이터 돌려서 prod2vec, metaprod2vec 클러스터링 비교하기
+TO-DO) 호텔데이터 돌려서 prod2vec, metaprod2vec 클러스터링 비교하기
 
 {% embed url="https://www.kaggle.com/code/keshavramaiah/hotel-recommender/notebook" %}
 
 ## Prod2vec과의 비교
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 PROPOSED APPROACH
 
