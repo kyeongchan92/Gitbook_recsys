@@ -16,6 +16,7 @@
   * [이웃 기반 협업 필터링](undefined-1/undefined.md)
 * [🚲 딥러닝을 이용한 추천시스템](undefined-2/README.md)
   * [FPMC(작성중)](undefined-2/fpmc.md)
+  * [Prod2Vec](undefined-2/prod2vec.md)
   * [Meta-Prod2Vec(2016)](undefined-2/meta-prod2vec-2016.md)
   * [NeuMF(2017)](undefined-2/neumf-2017.md)
   * [⏳ NARM(2017)](undefined-2/narm-2017.md)
