@@ -4,7 +4,6 @@
   * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
-  * [데이터 과학을 위한 통계 목차 정리](undefined/undefined.md)
   * [Neural Network에서의 Epoch](undefined/neural-network-epoch.md)
   * [batch size의 의미와 학습에 미치는 영향](undefined/batch-size.md)
   * [기울기 폭발과 소실, 그리고 clipping(작성중)](undefined/clipping.md)
