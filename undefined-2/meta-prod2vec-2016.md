@@ -6,7 +6,7 @@
 
 호텔데이터 돌려서 prod2vec, metaprod2vec 클러스터링 비교하기
 
-![](<../.gitbook/assets/image (14).png>)
+[https://www.kaggle.com/code/keshavramaiah/hotel-recommender/notebook](https://www.kaggle.com/code/keshavramaiah/hotel-recommender/notebook)
 
 ## 3 PROPOSED APPROACH
 
