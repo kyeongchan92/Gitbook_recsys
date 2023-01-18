@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌿 추천시스템 기본](README.md)
+* [👋 추천시스템 기본](README.md)
   * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [Loss의 reduction 옵션](undefined/loss-reduction.md)
