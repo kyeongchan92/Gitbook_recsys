@@ -22,7 +22,7 @@
 
 k를 3으로 하고 Recall@3을 구해보자. 모델이 사용확률 높은 순서대로 정렬 했을 때 top 3가 K, G, B 라고 해보자. Recall에서는 **순서는 상관없다!** 이들이 선정되었다는 사실까지만 필요하다.
 
-<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 아까 **테스트로 분류된 사용한 아이템**들, I, K, G을 '정답셋'이라고 하자. Recall은 예측한 아이템들과 정답셋의 교집합 개수가 분자로, k가 분모로 계산된 값이다.
 

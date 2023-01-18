@@ -1,2 +1,2 @@
-# 👒 Pytorch tips
+# 🔥 Pytorch tips
 
