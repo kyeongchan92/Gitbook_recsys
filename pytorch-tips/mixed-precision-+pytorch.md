@@ -8,7 +8,7 @@
 
 메모리 사용량을 절반 가까이 줄이고 최신 GPU에서는 산술연산도 빠르게 한다. Weights, activations, gradients를 IEEE half precision 포맷으로 저장한다.
 
-
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## 일반적인 학습
 

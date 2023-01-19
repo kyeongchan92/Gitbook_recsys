@@ -61,7 +61,7 @@ prod2vec 모델은 NLP 분야에서의 용어를 빌리자면 구매 시퀀스�
 추천의 다양성을 위해 상품들을 여러 클러스터들로 그룹핑하고, 이전에 구매한 상품이 속해있는 클러스터와 가장 연관 있는 클러스터 내의 상품을 추천한다. K-means 클러스터링을 썼으며, 상품 표현들 사이의 코사인 유사도를 기반으로 그룹핑했다. C개의 클러스터가 있다고 하자. cᵢ라는 클러스터에서 구매가 일어난 후 다음 구매는 Multinomial distribution(θᵢ₁, θᵢ₂, …, θᵢ\_C)를 따른다. θᵢⱼ는 cᵢ에서 구매가 일어난 다음 c\_j에서 구매가 일어날 확률이며 다음과 같다.\
 
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 구매했던 상품 p가 주어졌다 → p가 어느 클러스터에 속하는지 확인 → p가 만약 cᵢ라는 클러스터에 속해있다면 cᵢ와 가장 연관된 클러스터를 여러개 찾음 → 그 속의 상품들과 p와 코사인 유사도를 계산하여 상위 K개를 추천한다.
 
