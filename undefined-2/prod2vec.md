@@ -29,7 +29,7 @@ prod2vec 모델은 NLP 분야에서의 용어를 빌리자면 구매 시퀀스�
 \
 
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **v**ₚ는 인풋, **v**ₚ'은 아웃풋 벡터 표현을 의미한다. c는 컨텍스트의 길이이다. P는 단어의 수이다.
 

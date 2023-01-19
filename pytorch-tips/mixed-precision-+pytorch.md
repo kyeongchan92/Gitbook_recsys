@@ -8,7 +8,11 @@
 
 메모리 사용량을 절반 가까이 줄이고 최신 GPU에서는 산술연산도 빠르게 한다. Weights, activations, gradients를 IEEE half precision 포맷으로 저장한다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+논문은 gradient까지 float16이라고 했지만, pytorch 공식 홈페이지는 backward 계산 시에는 casting을 권장하지 않는다.
+
+
 
 ## 일반적인 학습
 
