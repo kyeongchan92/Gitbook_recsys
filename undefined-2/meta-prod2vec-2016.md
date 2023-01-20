@@ -10,7 +10,7 @@ TO-DO) 호텔데이터 돌려서 prod2vec, metaprod2vec 클러스터링 비교�
 
 ## Prod2vec과의 비교
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 PROPOSED APPROACH
 
