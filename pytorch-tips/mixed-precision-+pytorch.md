@@ -12,14 +12,6 @@
 
 논문은 gradient까지 float16이라고 했지만, pytorch 공식 홈페이지는 backward 계산 시에는 casting을 권장하지 않는다.
 
-논문을 읽다보면 weight, weight gradients, activation, activation gradients라는 단어가 나온다. weight와 weight gradient는 각각 모델의 파라미터와 그 파라미터의 그래디언트 값이라는건 알겠는데.. activation gradient란 뭘까? activation 함수는 Sigmoid나 ReLU처럼 그냥 통과시키는, 파라미터가 없는 함수인 줄 알았는데 activation이라는 파라미터를 가리키는 것 같은 단어도 나오고, 그래디언트까지 가졌다고 하니 처음엔 이해가 되지 않았다.
-
-[What are "Activations", "Activation Gradients", "Weights" and "Weight Gradients" in Convolutional Neural Networks?](https://stackoverflow.com/questions/57038055/what-are-activations-activation-gradients-weights-and-weight-gradients)
-
-위 글을 읽으면 이에 대한 답을 누가 달아놨다. Activation Gradients: This name is confusing but it is basically the **gradient of the loss** with respect to the input of the current layer $$l$$.
-
-
-
 
 
 ## 일반적인 학습
