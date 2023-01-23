@@ -33,7 +33,7 @@
   * [stacked bar chart](python-tips/stacked-bar-chart.md)
   * [Geopandas](python-tips/geopandas.md)
   * [plotly sankey diagram](python-tips/plotly-sankey-diagram.md)
-* [🎆 Graph 지식](graph/README.md)
+* [🎆 Graph 관련](graph/README.md)
   * [Gprah Laplacian (작성중)](graph/gprah-laplacian.md)
   * [Node2vec(2016)](graph/node2vec.md)
   * [DGCNN (2018)](graph/dgcnn-2018.md)
