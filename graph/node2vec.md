@@ -17,7 +17,7 @@
 
 **Node2vec의 전체적인 과정**
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (4).png" alt=""><figcaption></figcaption></figure>
 
 크게 세 가지 단계인 전이확률 계산 단계, 랜덤워크 단계, SGD 단계로 나뉜다.
 
@@ -37,13 +37,13 @@
 
 노드 u의 피쳐표현이 주어졌을 때 u의 이웃이 관측될 로그확률을 최대화한다. 식 (1)은 다음과 같이 쓸 수 있다.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2) (4).png>)
 
 그런데 Zᵤ는 노드 하나당 계속 다른 모든 노드들과 계산해야해서 큰 그래프에서 계산복잡도가 너무 높다. 그래서 네거티브 샘플링을 사용한다. 노드의 이웃은 딱 정해지는게 아니라, 샘플링 방식 S를 어떻게 정의하느냐에 따라 달라진다. 이제 이웃을 어떻게 정의하는지 알아보자.
 
 ### 3.1 Classic search strategies <a href="#3.1-classic-search-strategies" id="3.1-classic-search-strategies"></a>
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6) (3).png>)
 
 위 그래프에서 u의 이웃을 정의해보자. 여러 방식이 있겠지만, 방식들을 동등하게 비교하기 위해 이웃의 수는 k라고 정해놓기로 하자. 대표적으로 두 가지 방식이 있다.
 
@@ -86,7 +86,7 @@ q > 1이면 t로 돌아가기 좋아한다(밖으로 나가는 벽이 높아진�
 
 #### 3.2.3 The node2vec algorithm <a href="#3.2.3-the-node2vec-algorithm" id="3.2.3-the-node2vec-algorithm"></a>
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (3).png>)
 
 &#x20;
 

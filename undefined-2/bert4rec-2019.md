@@ -1,14 +1,18 @@
 # ⏳ BERT4Rec(2019)
 
-[paper](https://dl.acm.org/doi/pdf/10.1145/3357384.3357895)
+## Paper
 
-Sun, F., Liu, J., Wu, J., Pei, C., Lin, X., Ou, W., & Jiang, P. (2019, November). BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In _Proceedings of the 28th ACM international conference on information and knowledge management_ (pp. 1441–1450).
+[Sun, F., Liu, J., Wu, J., Pei, C., Lin, X., Ou, W., & Jiang, P. (2019, November). BERT4Rec: Sequential recommendation with bidirectional encoder representations from transformer. In _Proceedings of the 28th ACM international conference on information and knowledge management_ (pp. 1441–1450).](https://dl.acm.org/doi/pdf/10.1145/3357384.3357895)
 
 pytorch code : [https://github.com/jaywonchung/BERT4Rec-VAE-Pytorch](https://github.com/jaywonchung/BERT4Rec-VAE-Pytorch)
 
 ## ABSTRACT <a href="#abstract" id="abstract"></a>
 
-과거 모델들은 순차적 신경망을 사용하여 왼쪽에서 오른쪽으로 인코딩했지만, 그런 모델들은 최적화됐다고 할 수 없다. 이유1) 단방향 구조는 hidden representation의 가능성을 제한한다. 이유2) 추천에 있어서 순차적 정보를 엄격하게 지키는 것은 실제로는 맞지 않다.
+과거 모델들은 순차적 신경망을 사용하여 왼쪽에서 오른쪽으로 인코딩했지만, 그런 모델들은 최적화됐다고 할 수 없다.&#x20;
+
+이유1) **단방향 구조는 hidden representation의 가능성을 제한한다.**&#x20;
+
+이유2) **추천에 있어서 순차적 정보를 엄격하게 지키는 것은 실제로는 맞지 않다.**
 
 그래서 양방향 모델 BERT4Rec을 제안한다. 이는 왼쪽과 오른쪽 context를 모두 고려할 수 있다.
 
@@ -39,26 +43,32 @@ SASRec\[22]은 two-layer Transformer decoder이다. BERT4Rec과 매우 유사하
 
 ### 3.1 Problem Statement <a href="#31-problem-statement" id="31-problem-statement"></a>
 
-![](https://miro.medium.com/max/1400/1\*nmA8KySNOmE3zBXhqT5MpQ.png)
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-목적 : 인터랙션 히스토리 _Sᵤ\_가 주어졌을 때, \_u\_가 \_nᵤ_+1에 상호작용 할 아이템을 예측하는 것. 모든 아이템에 대해서 확률을 계산한다.
+목적 : 인터랙션 히스토리 $$S_u$$가 주어졌을 때, __ $$u$$_가_ $$n_{u}+1$$ 시점에 에 상호작용 할 아이템을 예측하는 것. **모든 아이템에 대해서 확률을 계산한다. 실험에서는 네거티브 샘플링을 사용하지만.**
 
 ### 3.2 Model Architecture <a href="#32-model-architecture" id="32-model-architecture"></a>
 
-![](https://miro.medium.com/max/1400/1\*vk9noSErbw64XU8Cph0rxQ.png)
+BERT4Rec은 **양방향 셀프어텐션**을 사용한다. BERT4Rec에는 **양방향 트랜스포머 레이어**가 $$L$$층 만큼 쌓여있다. 각 레이어는 이전 위치의 모든 레이어들과 정보를 교환한다.
 
-BERT4Rec은 양방향 셀프어텐션을 사용한다.
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-BERT4Rec에는 \_L\_개의 양방향 트랜스포머 레이어가 쌓여있다. 각 레이어는 이전 위치의 모든 레이어들과 정보를 교환한다.
+그럼 Trm 한 개는 어떻게 생겼는가?
 
 ### 3.3 Transformer Layer <a href="#33-transformer-layer" id="33-transformer-layer"></a>
 
-\_t\_길이의 인풋 시퀀스가 주어지면, 위치 \_i\_에 대해, 레이어 \_l\_에서 _**hᵢˡ**_를 동시에 계산한다. _**hᵢˡ**_ ∈ ℝᵈ를 쌓아, 행렬 _**Hˡ**_ ∈ ℝᵗ ˣ ᵈ 로 만든다. 동시에 계산하기 위해서이다. Transformer layer는 멀티헤드 셀프어텐션과 Position-wise Feed-Forward Nerwork로 구성되어있다.
+Trm에 들어오는 인풋부터 보자. 이전 Transformer layer에서 올라오는 인풋은 다음과 같이 만들어진다.
 
-![](https://miro.medium.com/max/712/1\*cEWOTRx6jVoYfhN\_44Szlw.png)
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+$$t$$길이의 인풋 시퀀스가 주어지면, 위치 $$i$$에 대해, 레이어 $$l$$에서 $$h_i^l$$을 동시에 계산한다. $$h_i^l \in \mathbb{R}^d$$를 쌓아, 행렬 $$H^l \in \mathbb{R}^{t \times d}$$로 만든다. 동시에 계산하기 위해서이다(병렬계산 가능하다는 것). Transformer layer는 멀티헤드 셀프어텐션과 Position-wise Feed-Forward Nerwork로 구성되어있다.
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Multi-Head Self-Attention**\
-_**Hˡ**_을 _h_ 서브스페이스로 선형적으로 사영시키고(헤드마다 각각 다르게), h에 어텐션 함수를 병렬적으로 적용하여 output representation을 생성한다. 그리고나서 다시 한 번 더 사영된다.
+$$H^l$$을 $$h$$ 서브스페이스로 선형적으로 사영시키고(헤드마다 각각 다르게), $$h$$에 어텐션 함수를 병렬적으로 적용하여 output representation을 생성한다. 그리고나서 다시 한 번 더 사영된다.
 
 ![](https://miro.medium.com/max/1400/1\*nqO2LtIVD-DP8CJuKkIbcQ.png)
 

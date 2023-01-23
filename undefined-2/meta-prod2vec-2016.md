@@ -32,7 +32,7 @@ prod2vec 정리 글에서 아래 수식이 목적함수이고 이를 최대화 �
 
 이 식은 Word2vec-SkipGram의 Log-likelihood 함수와 완전히 동일하다. 이 목적함수는 아래와 같이 **가중 교차 엔트로피**(Weighted Cross Entropy) 손실을 최소화하는 최적화 문제와 같다\[23]. 즉, 식 3.1에 마이너스를 붙여 최소화해도 된다.
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 Xᵢ는 상품 i의 출현 빈도이고, Xᵢⱼᵖᵒˢ는 아이템 쌍 (i, j)가 함께 출현한 빈도이다. I는 인풋 공간이고 J는 아웃풋 공간이다. pᵢⱼ는 훈련데이터 상에서 구해지는 경험적 조건부분포(empirical conditional distribution)이다. qᵢⱼ는 모델이 예측하는 조건부분포(modeled conditional distribution)이다.
 
@@ -85,7 +85,7 @@ $$L_{M|I}$$ : $$p_i$$가 출현했을 때 $$c_{i-1}$$, $$c_{i+1}$$이 출현할 
 
 $$L_{M|M}$$ : $$c_i$$가 출현했을 때 $$c_{i-1}$$, $$c_{i+1}$$이 출현할 확률 모델링
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (2).png>)
 
 위처럼 학습시킴으로써 얻을 수 있는 것은, $$p_i$$벡터는 주변 상품을 예측할 수 있을 뿐만 아니라 주변 상품의 카테고리까지 예측할 수 있는 능력이 생긴다는 것이다. 이 능력을 갖춘 벡터들은 컨텍스트로부터 학습되었다고 할 수 있다.
 

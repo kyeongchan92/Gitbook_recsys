@@ -163,7 +163,7 @@ $$
 )
 $$
 
-<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 그러나, GMF와 MLP의 임베딩을 공유하는 것은 성능을 제한할 수도 있다. 예를 들어, GMF와 MLP는 같은 임베딩 사이즈를 사용해야만 한다; 최적의 임베딩 사이즈가 매우 다른 데이터라면 이 방법은 최적의 앙상블이라고 할 수 없다.
 

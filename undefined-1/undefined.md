@@ -21,7 +21,7 @@
 
 평점 행렬은 $$R$$이라 표현하고, $$m$$명의 사용자와 $$n$$개의 아이템을 가지고 있는 $$m\times n$$ 행렬이다. 평점 중 일부를 학습데이터로 사용하고, 나머지는 테스트 데이터로 사용한다\[22].
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 이웃 기반 방법론의 평점 예측
 
@@ -33,11 +33,11 @@
 
 이 접근법에서는 타겟 유저와 유사한 유저를 찾아야한다. 두 사용자 $$u$$와 $$v$$의 평점 벡터 간의 유사도 $$\text{Sim}(u, v)$$를 구하는 방법 중 하나는 **피어슨 상관계수**이다. 피어슨 상관계수를 계산할 때는 $$u$$와 $$v$$ 둘 모두가 평가한 아이템에 대해서만 계산된다. 일단 각 사용자 $$u$$에 대한 평점 평균을 구해야한다.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>equation 2.1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>equation 2.1</p></figcaption></figure>
 
 그리고 $$u$$와 $$v$$의 행(유저)간의 피어슨 상관계수는 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>equation 2.2</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (3) (2).png" alt=""><figcaption><p>equation 2.2</p></figcaption></figure>
 
 ## 사용자 기반 알고리즘의 예시
 
