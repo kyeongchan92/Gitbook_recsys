@@ -40,7 +40,7 @@ Seq2seq는 입력 문장이 길든 짧든 **고정 길이**의 벡터에 인풋 
 
 ## 1. Attention Weight 과정 (a 구하기) <a href="#e6d2" id="e6d2"></a>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 _‘\<eos>’_라는 단어가 들어갈 때는 $$hs$$중에서 ‘나’라는 hidden state를 선택하여, 같이 사용해 예측하고자 한다. 그런데 선택이라는 작업은 미분이 불가능(=역전파 불가능, 학습 불가능)하기 때문에, 가중합을 하여 ‘선택’이라는 작업을 대체한다.
 
@@ -58,7 +58,7 @@ $$a$$를 구했다. $$a$$는 ‘$$h$$가 $$hs$$ 중에서 어디에 주목해야
 
 그럼 이 $$a$$와 인코더의 $$hs$$를 곱하면? 인코더의 ‘나’ 벡터를 선택하는 것과 비슷한 작업이 된다. ‘나’ 벡터가 80%나 함유돼있기 때문이다. ‘선택’이라는 작업을 가중합으로 수행하는 것이다. 그리고 이 벡터들을 다 더하면 context vector를 구할 수 있다. 그림으로 보면 다음과 같다.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>가중합을 계산하여 Context vector를 구한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>가중합을 계산하여 Context vector를 구한다.</p></figcaption></figure>
 
 ‘나’에 해당하는 가중치가 0.8이었기 때문에, $$c$$에는 ‘나’ 벡터의 성분이 많이 포함되어 있을 것이다(색깔도 비슷하게 맞췄다). 이로써 예측을 수행할 때, ‘나’라는 특정 단어에 주목하는 context vector를 얻었다. 이제 $$h$$ 혼자로만 예측하는 것이 아니라 context vector까지 협력하여 예측할 것이다.
 
