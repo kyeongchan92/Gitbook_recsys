@@ -98,7 +98,9 @@ $$L_{M|M}$$ : $$c_i$$가 출현했을 때 $$c_{i-1}$$, $$c_{i+1}$$이 출현할 
 아웃풋 공간을 아이템과 메타데이터의 아웃풋 공간을 분리해도 되고 안해도 된다. 본 논문에서는 둘을 같은 공간에 임베딩하여 normalization이 같이 진행되도록 하였다.
 
 Word2Vec의 가장 큰 장점은 확장성(Scalability)인데, 이는 곧 Negative Sampling loss로 원래의 소프트맥스 함수를 근사함으로써 Positive 및 일부의 Negative만으로 학습할 수 있기 때문이다. 네거티브 샘플링을 위해 Loss 함수를 변형하면 아래와 같다:\
-![](<../.gitbook/assets/image (20) (1).png>)
+
+
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 4. EXPERIMENT <a href="#experiment" id="experiment"></a>
 
