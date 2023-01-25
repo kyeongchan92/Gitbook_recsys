@@ -23,7 +23,7 @@ description: batch size에 대한 글 여러 곳에서 발췌
 * 배치사이즈가 크면 무슨 일이 벌어지는가? --> 일반화 성능이 낮아진다. 일반화 성능이 낮다는 것은 학습데이터 오버피팅이 일어난다는 것이다. 또는, 로컬 미니멈에 빠진다.\[1]
 * 배치사이즈가 작으면 무슨 일이 벌어지는가? --> gradient에 노이즈가 많이 낀다.\[2]
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## 출처 : [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
 

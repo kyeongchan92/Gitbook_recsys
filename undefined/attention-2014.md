@@ -14,7 +14,7 @@ $$h$$대신 $$hs$$를 디코더에 전달한다.
 
 ## Seq2seq의 문제 <a href="#5bee" id="5bee"></a>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>가장 기본적인 Sequence to Sequence.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>가장 기본적인 Sequence to Sequence.</p></figcaption></figure>
 
 Seq2seq는 입력 문장이 길든 짧든 **고정 길이**의 벡터에 인풋 시퀀스의 모든 정보를 압축한다. 인코더의 출력이 항상 같은 길이의 벡터일 필요가 있을까? 이를 개선하는 것이 Attention의 첫 번째 포인트다. 인코더의 아웃풋 벡터를 입력 시퀀스의 길이에 따라 바꿔주자. 이를 해결할 수 있는 방법은 바로 인코더의 모든 hidden state를 이용하는 것이다.
 
@@ -40,7 +40,7 @@ Seq2seq는 입력 문장이 길든 짧든 **고정 길이**의 벡터에 인풋 
 
 ## 1. Attention Weight 과정 (a 구하기) <a href="#e6d2" id="e6d2"></a>
 
-<figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 _‘\<eos>’_라는 단어가 들어갈 때는 $$hs$$중에서 ‘나’라는 hidden state를 선택하여, 같이 사용해 예측하고자 한다. 그런데 선택이라는 작업은 미분이 불가능(=역전파 불가능, 학습 불가능)하기 때문에, 가중합을 하여 ‘선택’이라는 작업을 대체한다.
 
@@ -62,7 +62,7 @@ $$a$$를 구했다. $$a$$는 ‘$$h$$가 $$hs$$ 중에서 어디에 주목해야
 
 ‘나’에 해당하는 가중치가 0.8이었기 때문에, $$c$$에는 ‘나’ 벡터의 성분이 많이 포함되어 있을 것이다(색깔도 비슷하게 맞췄다). 이로써 예측을 수행할 때, ‘나’라는 특정 단어에 주목하는 context vector를 얻었다. 이제 $$h$$ 혼자로만 예측하는 것이 아니라 context vector까지 협력하여 예측할 것이다.
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 얻은 context vector와 $$h$$를 함께 concat하여 Affine 계층에 넘겨준다. Affine 계층에 RNN의 hidden state 뿐만 아니라 Attention 계층의 context vector까지 더해지게 되었다. 디코더 안에서의 계산 과정을 정리하면 위 그림과 같다.
 
@@ -78,7 +78,7 @@ Query, Key, Value 구조 먼저 정의.
 
 **쿼리(query)**가 주어지면, 모든 **키(key)**와의 유사도를 구하여 이 유사도를 키와 매핑된 **값(value)**에 반영한 후, 값(value)을 모두 더해 리턴함. 이 결과 값이 어텐션 값(Attention value)이다.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 어텐션을 위 구조와 대응시켜보면,
 

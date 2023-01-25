@@ -73,7 +73,7 @@ $$L_{I|M}$$ : $$c_i$$(중심 메타)가 출현했을 때 $$p_i$$(중심 아이�
 
 $$L_{J|M}$$ : $$c_i$$가 출현했을 때 $$p_{i-1}$$, $$p_{i+1}$$이 출현할 확률 모델링
 
-![](<../.gitbook/assets/image (18) (1).png>)
+![](<../.gitbook/assets/image (18).png>)
 
 
 
@@ -125,7 +125,7 @@ Word2Vec의 가장 큰 장점은 확장성(Scalability)인데, 이는 곧 Negati
 \
 
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Extra. 이해를 돕기 위한 관련 글 <a href="#undefined" id="undefined"></a>
 

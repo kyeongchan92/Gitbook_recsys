@@ -40,7 +40,7 @@ plt.xlim(-0.5, 0.5)
 plt.title("histogram of nn.Parameter(torch.Tensor(100, 32))'s weights. (# : 3200)")
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## nn.Linear <a href="#680c" id="680c"></a>
 

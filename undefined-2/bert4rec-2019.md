@@ -63,7 +63,7 @@ Trm에 들어오는 인풋부터 보자. 이전 Transformer layer에서 올라�
 
 $$t$$길이의 인풋 시퀀스가 주어지면, 위치 $$i$$에 대해, 레이어 $$l$$에서 $$h_i^l$$을 동시에 계산한다. $$h_i^l \in \mathbb{R}^d$$를 쌓아, 행렬 $$H^l \in \mathbb{R}^{t \times d}$$로 만든다. 동시에 계산하기 위해서이다(병렬계산 가능하다는 것). Transformer layer는 멀티헤드 셀프어텐션과 Position-wise Feed-Forward Nerwork로 구성되어있다.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

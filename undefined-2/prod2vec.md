@@ -14,7 +14,7 @@
 
 **목적 : 각각의 상품 p의 D차원 표현인 vₚ를 찾는 것.** 이 때 당연하지만 유사한 아이템은 근처에 위치해야함.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>s는 이메일(e)의 시퀀스이며, 이메일은 product로 구성되어있다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>s는 이메일(e)의 시퀀스이며, 이메일은 product로 구성되어있다.</p></figcaption></figure>
 
 ### 저차원의 상품 임베딩 <a href="#undefined" id="undefined"></a>
 
@@ -42,7 +42,7 @@ prod2vec 모델은 NLP 분야에서의 용어를 빌리자면 구매 시퀀스�
 
 다수의 상품이 동시에 구매되었다는 정보를 고려하기 위해 skip-gram모델을 변형한 모델이다. 쇼핑백의 개념을 도입한다. 이 모델은 상품 수준이 아니라 영수증 수준에서 동작한다. 상품 벡터 표현은 아래와 같이 변형된 목적함수를 최대화함으로써 얻어진다.
 
-<figure><img src="../.gitbook/assets/image (3) (2) (4).png" alt=""><figcaption><p>prod2vec(수식 3.1)과의 차이는 j가 상품 수준에서 영수증 수준으로 바뀌었다는 것이다. 다른 컨텍스트의 아이템과 연산.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>prod2vec(수식 3.1)과의 차이는 j가 상품 수준에서 영수증 수준으로 바뀌었다는 것이다. 다른 컨텍스트의 아이템과 연산.</p></figcaption></figure>
 
 ℙ(eₘ₊ⱼ|pₘₖ)는 이웃하고 있는 영수증 eₘ₊ⱼ를 관측할 확률이다. 영수증 eₘ₊ⱼ은 상품으로 구성되어 있으므로 eₘ₊ⱼ=(pₘ₊ⱼ,₁, …, pₘ₊ⱼ,\_Tₘ)이다. 상품 pₘₖ가 주어졌을 때 왜 한 단계 더 높은 수준인 영수증을 관측할 확률인가 헷갈릴 수도 있지만, ℙ(eₘ₊ⱼ|pₘₖ)는 다음과 같다.
 
