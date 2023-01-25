@@ -40,7 +40,7 @@ Seq2seq는 입력 문장이 길든 짧든 **고정 길이**의 벡터에 인풋 
 
 ## 1. Attention Weight 과정 (a 구하기) <a href="#e6d2" id="e6d2"></a>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 _‘\<eos>’_라는 단어가 들어갈 때는 $$hs$$중에서 ‘나’라는 hidden state를 선택하여, 같이 사용해 예측하고자 한다. 그런데 선택이라는 작업은 미분이 불가능(=역전파 불가능, 학습 불가능)하기 때문에, 가중합을 하여 ‘선택’이라는 작업을 대체한다.
 

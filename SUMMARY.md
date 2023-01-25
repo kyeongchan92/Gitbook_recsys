@@ -7,6 +7,7 @@
   * [Neural Network에서의 Epoch](undefined/neural-network-epoch.md)
   * [batch size의 의미와 학습에 미치는 영향](undefined/batch-size.md)
   * [기울기 폭발과 소실, 그리고 clipping(작성중)](undefined/clipping.md)
+  * [LSTM(1997) 정리](undefined/lstm-1997.md)
   * [Attention(2014) 복습](undefined/attention-2014.md)
   * [Attention all you need(2017, Transformer 제안) 복습](undefined/attention-all-you-need-2017-transformer.md)
   * [어떤 activation을 써야할까(작성중)](undefined/activation.md)

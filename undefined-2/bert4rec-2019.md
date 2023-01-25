@@ -51,7 +51,7 @@ SASRec\[22]은 two-layer Transformer decoder이다. BERT4Rec과 매우 유사하
 
 BERT4Rec은 **양방향 셀프어텐션**을 사용한다. BERT4Rec에는 **양방향 트랜스포머 레이어**가 $$L$$층 만큼 쌓여있다. 각 레이어는 이전 위치의 모든 레이어들과 정보를 교환한다.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 그럼 Trm 한 개는 어떻게 생겼는가?
 

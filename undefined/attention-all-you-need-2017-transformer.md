@@ -49,11 +49,11 @@ Q, K, V에 대해서는 [이전에 정리한 바](attention-2014.md#undefined-2)
 
 그리고 어텐션이 적용된다. 일반적인 어텐션은 Query와 Key를 곱하고 → 어텐션 값들 → 소프트맥스 →이 값(유사도라고 봐도 되고 확률이라고 봐도 되는 값)을 Value와 가중합 = 컨텍스트 벡터.인데, 트랜스포머 논문에서는 Query와 Key를 곱하고 → $$\sqrt{d_k}$$로 나눠준다. $$d_k$$는 Key벡터의 차원이다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>이 과정을 scaled dot product Attention이라고 한다.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>이 과정을 scaled dot product Attention이라고 한다.</p></figcaption></figure>
 
 ## 멀티헤드 어텐션
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 어텐션 과정을 병렬로 여러개 처리하면, 각각의 어텐션은 다른 관점으로 정보를 수집할 수 있어 효과적이다.
 
