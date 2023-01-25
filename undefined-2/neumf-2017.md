@@ -332,7 +332,17 @@ NCF의 네거티브 샘플링의 효과를 설명하기 위하여, Figure 7에 �
 
 히든레이어가 없는 MLP-0(즉, 임베딩레이어가 곧바로 예측값으로 사영됨)에서는 성능이 매우 낮고 개인화 모델이 아닌 ItemPop보다 좋지도 않았다. 이것은 Section 3.3에서 우리가 **유저와 아이템의 임베딩 벡터를 단순히 concatenating하는 것이 그들의 피쳐 상호작용을 모델링하는데 불충분하고, 히든레이어를 통한 transforming이 필요하다는 주장을 뒷받침한다.**
 
+## References
 
+\[1] I. Bayer, X. He, B. Kanagal, and S. Rendle. **A generic coordinate descent framework for learning from implicit feedback**. In WWW, 2017.
+
+\[6] A. M. Elkahky, Y. Song, and X. He. **A multi-view deep learning approach for cross domain user modeling in recommendation systems**. In WWW, pages 278–288, 2015.
+
+\[14] X. He, H. Zhang, M.-Y. Kan, and T.-S. Chua. **Fast matrix factorization for online recommendation with implicit feedback**. In SIGIR, pages 549–558, 2016.
+
+\[21] Y. Koren. Factorization meets the neighborhood: **A multifaceted collaborative filtering model**. In KDD, pages 426–434, 2008.
+
+\[27] S. Rendle, C. Freudenthaler, Z. Gantner, and L. Schmidt-Thieme. **Bpr: Bayesian personalized ranking from implicit feedback**. In UAI, pages 452–461, 2009.
 
 
 
