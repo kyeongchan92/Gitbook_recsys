@@ -54,6 +54,10 @@ Figure 1에서 보는 것처럼 모델의 인풋을 $$(\mathcal{S}_1^u, \mathcal
 
 ### D. Evaluation Metrics
 
+추천 성능을 평가하기 위해 Hit@10과 NDCG@10을 사용했다\[14, 19]. Hit@10은 ground-truth(실제 다음 아이템)아이템이 top 10 아이템 중에 포함된 횟수를 카운트하고, NDCG@10은 높이 랭크될수록 높이 평가되는 랭크를 고려한 메트릭이다. **각 유저에 대해서 하나의 테스트 아이템밖에 없기 때문에**, Hit@10은 Recall@10과 동일하고, Precision@10을 비율로 나타낸 것과 동일하다.
+
+아이템-유저 페어에 대한 계산이 무거워지는 것을 피하기 위하여 \[14, 48]의 전략을 따랐다. 각 유저 $$u$$에 대하여, 100개의 네거티브 아이템을 샘플링하고, 이 아이템들과 ground-truth 아이템을 함께 랭킹한다. 이렇게 101개의 아이템을 랭킹함으로써 Hit@10과 NDCG@10이 계산된다.
+
 ### E. Recommendation Performance
 
 ### F. Ablation Study
@@ -66,9 +70,13 @@ Figure 1에서 보는 것처럼 모델의 인풋을 $$(\mathcal{S}_1^u, \mathcal
 
 \[1] S. Rendle, C. Freudenthaler, and L. Schmidt-Thieme, “Factorizing personalized markov chains for next-basket recommendation,” in WWW, 2010.
 
+\[14] X. He, L. Liao, H. Zhang, L. Nie, X. Hu, and T. Chua, “Neural collaborative filtering,” in WWW, 2017.
+
 \[19] R. He, W. Kang, and J. McAuley, “Translation-based recommendation,” in RecSys, 2017.
 
 \[21] R. He and J. McAuley, “Fusing similarity models with markov chains for sparse sequential recommendation,” in ICDM, 2016.
+
+\[48] Y. Koren, “Factorization meets the neighborhood: a multifaceted collaborative filtering model,” in SIGKDD, 2008.
 
 
 
