@@ -134,9 +134,25 @@ _**vₘ\***_ : true item for the masked item vₘ
 **Test**\
 Sequential Recommendation은 다음에 등장할 아이템을 예측하는 것인데, 이 모델은 마스크된 아이템을 예측하다보니 미스매치가 존재한다. 이를 해결하기 위해 user behavior의 마지막에 \[mask] 토큰을 추가하고, 마지막 hidden representaion(mask 토큰꺼)으로 다음 아이템을 예측하도록 한다. 거기에 더욱 Sequential recommenation 태스크처럼(마지막 아이템 예측하는 것) 하기 위해서, 학습할 때 마지막 아이템 하나만 마스크한 샘플을 추가해준다.
 
-\[22] Wang-Cheng Kang and Julian McAuley. 2018. Self-Attentive Sequential Recommendation. In Proceedings of ICDM. 197–206
+### 4.2 Task settings & Evaluation Metrics
 
-\[42] Ruslan Salakhutdinov, Andriy Mnih, and Geoffrey Hinton. 2007. Restricted Boltzmann Machines for Collaborative Filtering. In Proceedings of ICML. 791– 798.
+순차적 추천모델을 평가하기 위하여 이미 널리 알려진 leave-one-out 평가(즉, 다음 아이템 추천) 태스크를 선택하였다\[12, 22, 49]. 각 유저에 대하여, 가장 마지막 아이템을 테스트 데이터로, 그 앞의 아이템을 validation 셋으로, 나머지 아이템들을 훈련 셋으로 사용한다. 간단하고 공정한 평가를 위해서, 하나의 ground truth 아이템당 100개의 네거티브 아이템을 짝지었다. 네거티브 아이템은 해당 유저가 상호작용하지 않은 아이템들을 말한다. 올바른 네거티브 샘플링을 위해\[19], 100개의 네거티브 아이템은 그들의 인기도에 따라 샘플링되었다. 그러므로, 이 태스크는 각 유저에 대하여 네거티브 아이템과 ground truth 아이템을 한데 랭킹하는 것이 된다.
+
+**Evaluation Metrics**
+
+모든 모델들의 랭킹 리스트를 평가하기 위하여, Hit ratio(HR), Normalized Discounted Cumulative Gain(NDCG), Mean Reciprocal Rank(MRR)을 사용했다. **각 유저에 대해 하나의 ground truth만 있는 상태**이기 때문에, HR@k는 Recall@k과 동일해지게 된다. MRR은 Mean Average Precision(MAP)와 동일해지게 된다. HR과 NDCG를 k=1, 5, 10으로 변화시켜가며 측정하였다. 당연히 값이 높을수록 높은 성능임을 의미한다.
+
+
+
+\[12] Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu, and Tat-Seng Chua. 2017. **Neural Collaborative Filtering**. In Proceedings of WWW. 173–182.
+
+\[19] Jin Huang, Wayne Xin Zhao, Hongjian Dou, Ji-Rong Wen, and Edward Y. Chang. 2018. **Improving Sequential Recommendation with Knowledge-Enhanced Memory Networks**. In Proceedings of SIGIR. ACM, 505–514.
+
+\[22] Wang-Cheng Kang and Julian McAuley. 2018. **Self-Attentive Sequential Recommendation**. In Proceedings of ICDM. 197–206
+
+\[42] Ruslan Salakhutdinov, Andriy Mnih, and Geoffrey Hinton. 2007. **Restricted Boltzmann Machines for Collaborative Filtering**. In Proceedings of ICML. 791– 798.
+
+\[49] Jiaxi Tang and Ke Wang. 2018. **Personalized Top-N Sequential Recommendation via Convolutional Sequence Embedding**. In Proceedings of WSDM. 565–573.
 
 
 
