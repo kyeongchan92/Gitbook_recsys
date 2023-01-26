@@ -11,7 +11,7 @@
 **“확률”**이란, 다음처럼 우리가 고등학교 때 많이 구하던 바로 그것이다!\
 
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 평균은 얼마고, 표준편차는 얼마일 때, 몸무게가 4보다 크거나 같고 5보다 작거나 같을 확률은 얼마인가?
 

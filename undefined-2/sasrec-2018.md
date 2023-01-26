@@ -1,4 +1,4 @@
-# ⏳ SASRec(2018)(작성중)
+# SASRec(2018)(작성중)
 
 [paper](https://arxiv.org/pdf/1808.09781v1.pdf)
 

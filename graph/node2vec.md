@@ -6,7 +6,7 @@
 
 ## **노드 임베딩이란?**
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ****
 
@@ -33,7 +33,7 @@
 
 임의의 노드 u에 대하여 Nₛ을 _network neighborhood_라고 하자. Nₛ는 이웃 샘플링 방식 S에 따라 정의된다. 우리가 목적은 아래의 목적함수를 최적화하는 것이다.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 노드 u의 피쳐표현이 주어졌을 때 u의 이웃이 관측될 로그확률을 최대화한다. 식 (1)은 다음과 같이 쓸 수 있다.
 
