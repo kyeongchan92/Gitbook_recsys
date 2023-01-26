@@ -1,4 +1,4 @@
-# Attention all you need(2017, Transformer 제안) 복습
+# Attention is all you need(2017, Transformer 제안) 복습
 
 ## Paper
 
