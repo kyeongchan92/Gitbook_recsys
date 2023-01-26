@@ -23,13 +23,13 @@ description: batch size에 대한 글 여러 곳에서 발췌
 * 배치사이즈가 크면 무슨 일이 벌어지는가? --> 일반화 성능이 낮아진다. 일반화 성능이 낮다는 것은 학습데이터 오버피팅이 일어난다는 것이다. 또는, 로컬 미니멈에 빠진다.\[1]
 * 배치사이즈가 작으면 무슨 일이 벌어지는가? --> gradient에 노이즈가 많이 낀다.\[2]
 
-<figure><img src="../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## 출처 : [Batch Size in Deep Learning](https://blog.lunit.io/2018/08/03/batch-size-in-deep-learning/)
 
 batch size (m)을 어떻게 결정하느냐에 따라 학습 과정에 차이가 발생합니다. Batch size가 클수록 gradient가 정확해지지만 한 iteration에 대한 계산량이 늘어나게 됩니다. 그러나 한 iteration에서 각 example에 대한 gradient ![\nabla L\_i(\theta)](https://s0.wp.com/latex.php?latex=%5Cnabla+L\_i%28%5Ctheta%29\&bg=ffffff\&fg=000000\&s=0\&c=20201002)는 parellel하게 계산이 가능하므로, 큰 batch를 사용하면 multi-GPU 등 parellel computation의 활용도를 높여서 전체 학습 시간을 단축할 수 있습니다. 정리하면, batch size가 SGD에 끼치는 기본적인 영향은 아래와 같습니다.
 
-<figure><img src="../../.gitbook/assets/image (6) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 small batch를 사용하는 것이 generalization 측면에서 더 좋은 영향을 끼친다. 그러나 아직까지 딥러닝에서 batch size의 영향에 관해 뚜렷하게 밝혀진 바는 없습니다. 최적의 성능을 얻기 위한 batch size는 모델과 task의 특성에 따라 크게 달라지며, 학습 시간을 단축하기 위한 측면에서는 batch size를 최대한 크게 키우면서 성능을 향상시키는 것이 훨씬 좋은 접근법이라고 볼 수 있습니다 \[3, 4]
 
