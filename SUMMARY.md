@@ -12,7 +12,7 @@
     * [LSTM(1997) 복습](undefined/sequential-embedding/lstm-1997.md)
     * [GRU(2014) 복습](undefined/sequential-embedding/gru-2014.md)
     * [Attention(2014) 복습](undefined/sequential-embedding/attention-2014.md)
-    * [Attention all you need(2017, Transformer 제안) 복습](undefined/sequential-embedding/attention-all-you-need-2017-transformer.md)
+    * [Attention is all you need(2017, Transformer 제안) 복습](undefined/sequential-embedding/attention-is-all-you-need-2017-transformer.md)
   * [어떤 activation을 써야할까(작성중)](undefined/activation.md)
 * [⌚ 메모리 기반 추천시스템](undefined-1/README.md)
   * [이웃 기반 협업 필터링](undefined-1/undefined.md)
