@@ -6,12 +6,12 @@
 
 우도에 대해 알아보기 전에, 일단 가장 친숙한 확률이라는 것부터 살펴보자. 고양이들 1,000마리의 몸무게를 재서 다음과 같은 히스토그램 분포가 나왔다고 해보자. **평균은 4, 표준편차는 0.5**라고 해보자.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (2).png" alt=""><figcaption></figcaption></figure>
 
 **“확률”**이란, 다음처럼 우리가 고등학교 때 많이 구하던 바로 그것이다!\
 
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 평균은 얼마고, 표준편차는 얼마일 때, 몸무게가 4보다 크거나 같고 5보다 작거나 같을 확률은 얼마인가?
 
@@ -25,7 +25,7 @@ $$
 \mathbb{P}(3.5 \le \text{몸무게} \le 4|\mathcal{N}(4, 0.5)) =0.34
 $$
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (3).png" alt=""><figcaption></figcaption></figure>
 
 **“확률”**이란, 사건의 범위는 변하지만, 분포는 고정되어 있는 형태다. 내가 한 마리의 고양이를 키우고 있다고 가정해보자. 위의 분포에서는, 즉, 내가 관측한 고양이들의 몸무게들 중에서는, 내 고양이의 몸무게가 4kg에서 5kg사이일 확률은 47.7%이고, 3.5kg에서 4kg 사이일 확률은 34%이다.
 
@@ -41,7 +41,7 @@ $$
 
 아래 그림을 보자.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (3).png" alt=""><figcaption></figcaption></figure>
 
 우리집 고양이가 5kg이라고 해보자. (뚱냥이다!)
 
@@ -59,7 +59,7 @@ $$
 
 다시다시, 분포를 오른쪽으로 조금 움직여봅시다!
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 $$
 \mathcal{L}(\mathcal{N}(5, 0.5) | \text{고양이몸무게}=5)=0.798

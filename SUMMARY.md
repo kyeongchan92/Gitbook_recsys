@@ -1,8 +1,9 @@
 # Table of contents
 
 * [👋 추천시스템 기본](README.md)
-  * [추천에서의 Recall (Hit Ratio, HR)](undefined/metrics/recall-hit-ratio-hr.md)
+  * [추천에서의 Recall (=Hit Ratio)](undefined/recall-hit-ratio.md)
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
+  * [Accuracy, Precision, Recall, F1-score 복습](undefined/accuracy-precision-recall-f1-score.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
   * [1,000회 이상 인용된 추천시스템 논문](undefined/1-000.md)
   * [Maximum Likelihood Estimation 정리](undefined/maximum-likelihood-estimation.md)

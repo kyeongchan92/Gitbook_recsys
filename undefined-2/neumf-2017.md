@@ -300,7 +300,7 @@ Figure 4는 predictive factor의 수에 대한 HR@10과 NDCG@10 결과이다. MF
 
 첫 번째로, NeuMF가 두 데이터셋 모두에서 eALS와 BPR과는 큰 차이로 제일 높은 성능을 달성한 것을 볼 수 있다(차이 각각 4.5%, 4.9%). Pinterest에서는 예측인자가 8로 작음에도 불구하고 eALS와 BPR이 일 때보다 높다. 이는 선형적인 MF와 비선형적인 MLP의 결합으로 인해 NeuMF의 표현력이 높아짐을 의미한다. 두 번째로, 서로 다른 두 NCF인 GMF와 MLPr가 모두 좋은 성능을 보여주었다. MLP가 GMF보다 살짝 높다. MLP는 더 많은 히든레이어를 추가함으로써 더 향상될 수 있으며 여기서는 3개일 때만 보여준다. 작은 예측 요인에 대해서는, GMF가 eALS를 두 데이터셋 모두에서 능가했다; 비록 GMF가 큰 인자에서는 오버피팅이 발생하지만, GMF의 최고 성능은 eALS의 최고성능보다 높다. 마지막으로, GMF와 BPR은 같은 MF를 학습하지만 목적함수는 다르기 때문에, 추천태스크에 대한 분류관점의 효율성은 인정하면서, GMF는 BPR보다는 항상 높다.
 
-<figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption><p>Figure 5</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (3) (1).png" alt=""><figcaption><p>Figure 5</p></figcaption></figure>
 
 Figure 5는 $$K$$를 1부터 10까지 바꿔가며 측정한 Top-$$K$$ 성능을 보여준다. 그림을 깔끔하게 보기 위하여 다른 NCF 모델은 빼로 NeuMF만 기록하였다. NeuMF는 모든 $$K$$에 대해서 항상 다른 모델보다 높다. 그리고 추가적으로 one-sample paired t-test를 수행하여 향상 정도가 $$p<0.01$$로 통계적으로 유의미한지 확인했다. 베이스라인 방법에 대하여, Movielens의 NDCG에서, eALS는 BPR을 5.1% 능가했고 Pinterest에서는 더 낮았다. Pairwise ranking-aware 학습자 때문에 BPR이 랭킹 성능에서는 더 강력하다는 \[14]의 발견과 동일한 결과이다. ItemKNN은 모델 기반 방법론보다는 낮았다. 그리고 ItemPop의 결과는 매우 안좋아서 단순 인기상품보다는 개인화가 요구된다는 것을 보여준다.
 
@@ -312,7 +312,7 @@ Figure 5는 $$K$$를 1부터 10까지 바꿔가며 측정한 Top-$$K$$ 성능을
 
 ### 4.3 Log Loss with Negative Sampling (RQ2)
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Figure 6. Training loss and recommendation performance of NCF methods w.r.t the number of iterations on MovieLens (factors=8)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption><p>Figure 6. Training loss and recommendation performance of NCF methods w.r.t the number of iterations on MovieLens (factors=8)</p></figcaption></figure>
 
 Implicit 피드백이 한 가지 클래스만 존재한다는 속성을 다루기 위해서, 우리는 추천 문제를 이진 분류 문제로 변환했다. NCF를 확률적 모델로 바라봄으로써, 이를 log loss로 최적화하였다. Figure 6은 MovieLens에 대해 각각의 iteration에서 NCF의 학습 loss와 추천 성능을 보여준다. Pinterest에 대한 결과에서는 동일한 추세를 보여 생략했다. 첫 번째로, iteration이 높아질수록 NCF의 학습 손실은 점점 감소하고 추천 성능은 향상하는 것을 볼 수 있다. iteration 10 이하에서 가장 효율적인 성능 향상이 일어나며, 더 높은 곳에서는 오버피팅이 발생한다(예를 들어, 10 이상에서는 비록 NeuMF의 학습 손실은 감소하지만 추천 성능은 하락한다). 두 번째로, 세 NCF 모델 중 NeuMF가 가장 낮은 학습 손실을 보였고 그 다음 MLP, GMF 순서이다. 추천 성능 또한 NeuMF > MLP > GMF 순서이다. 위 결과는 implicit 피드백을 학습할 때 log loss를 최적화하는 것에 대한 합리성과 효과성을 제공하는 경험적 증거가 된다.
 

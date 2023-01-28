@@ -2,7 +2,7 @@
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% code overflow="wrap" lineNumbers="true" %}
 ````python

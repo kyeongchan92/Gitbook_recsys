@@ -24,7 +24,7 @@ Seq2seq는 입력 문장이 길든 짧든 **고정 길이**의 벡터에 인풋 
 
 우선 기존 디코더를 생각해보자.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>기존 디코더</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (4).png" alt=""><figcaption><p>기존 디코더</p></figcaption></figure>
 
 기존 디코더는 인코더에서 넘어온 hidden representation, $$h$$를 첫 번째 hidden state로 사용했다. 참고로 인코더의 인풋 시퀀스는 ‘나는 고양이로소이다’처럼 번역 전의 시퀀스이고, 디코더의 인풋 시퀀스는 ‘i am a cat’처럼 번역 후의 시퀀스이다. Softmax의 출력은 모든 토큰에 대한 확률이다.
 
