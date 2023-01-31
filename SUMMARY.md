@@ -8,7 +8,7 @@
   * [1,000회 이상 인용된 추천시스템 논문](undefined/1-000.md)
   * [Maximum Likelihood Estimation 정리](undefined/maximum-likelihood-estimation.md)
 * [⌚ 메모리 기반 추천시스템](undefined-1/README.md)
-  * [이웃 기반 협업 필터링](undefined-1/undefined.md)
+  * [Neighborhood-based CF](undefined-1/neighborhood-based-cf.md)
 * [🚲 딥러닝을 이용한 추천시스템](undefined-2/README.md)
   * [FPMC(2010)(작성중)](undefined-2/fpmc.md)
   * [Prod2Vec(2015)](undefined-2/prod2vec.md)
