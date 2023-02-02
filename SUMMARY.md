@@ -15,6 +15,7 @@
   * [Meta-Prod2Vec(2016)](undefined-2/meta-prod2vec-2016.md)
   * [NeuMF(2017)](undefined-2/neumf-2017.md)
   * [NARM(2017)](undefined-2/narm-2017.md)
+  * [PinSage(2018,7)(작성중)](undefined-2/pinsage-2018-7.md)
   * [SASRec(2018)(작성중)](undefined-2/sasrec-2018.md)
   * [NGCF(2019)](undefined-2/ngcf-2019.md)
   * [BERT4Rec(2019)](undefined-2/bert4rec-2019.md)
