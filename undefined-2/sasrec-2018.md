@@ -1,8 +1,8 @@
-# SASRec(2018)(작성중)
+# SASRec(2018,11)(작성중)
 
-[paper](https://arxiv.org/pdf/1808.09781v1.pdf)
+## Paper
 
-Kang, W. C., & McAuley, J. (2018, November). Self-attentive sequential recommendation. In _2018 IEEE international conference on data mining (ICDM)_ (pp. 197-206). IEEE.
+[Kang, W. C., & McAuley, J. (2018, November). Self-attentive sequential recommendation. In _2018 IEEE international conference on data mining (ICDM)_ (pp. 197-206). IEEE.](https://arxiv.org/pdf/1808.09781v1.pdf)
 
 [paperswithcode](https://paperswithcode.com/paper/180809781)
 

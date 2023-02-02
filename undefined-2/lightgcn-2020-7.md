@@ -1,8 +1,8 @@
-# LightGCN(2020)(작성중)
+# LightGCN(2020,7)(작성중)
 
-[paper](https://dl.acm.org/doi/pdf/10.1145/3397271.3401063)
+## Paper
 
-He, X., Deng, K., Wang, X., Li, Y., Zhang, Y., & Wang, M. (2020, July). Lightgcn: Simplifying and powering graph convolution network for recommendation. In _Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval_ (pp. 639-648).
+[He, X., Deng, K., Wang, X., Li, Y., Zhang, Y., & Wang, M. (2020, July). Lightgcn: Simplifying and powering graph convolution network for recommendation. In _Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval_ (pp. 639-648).](https://dl.acm.org/doi/pdf/10.1145/3397271.3401063)
 
 [paperswithcode](https://paperswithcode.com/method/lightgcn)
 
