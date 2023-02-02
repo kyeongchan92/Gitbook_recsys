@@ -20,6 +20,7 @@
   * [BERT4Rec(2019)](undefined-2/bert4rec-2019.md)
   * [LightGCN(2020)(작성중)](undefined-2/lightgcn-2020.md)
 * [🍩 신경망 학습 기법들](undefined-3/README.md)
+  * [최적화 기법들(작성중)](undefined-3/undefined.md)
   * [기울기 폭발과 소실, 그리고 clipping(작성중)](undefined-3/clipping.md)
   * [어떤 activation을 써야할까(작성중)](undefined-3/activation.md)
   * [batch size의 의미와 학습에 미치는 영향](undefined-3/batch-size.md)
