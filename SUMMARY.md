@@ -5,7 +5,6 @@
   * [Implicit data에서의 nDCG](undefined/metrics/implicit-data-ndcg.md)
   * [Accuracy, Precision, Recall, F1-score 복습](undefined/accuracy-precision-recall-f1-score.md)
   * [Matrix Factorization](undefined/matrix-factorization.md)
-  * [1,000회 이상 인용된 추천시스템 논문](undefined/1-000.md)
   * [Maximum Likelihood Estimation 정리](undefined/maximum-likelihood-estimation.md)
 * [⌚ 메모리 기반 추천시스템](undefined-1/README.md)
   * [Neighborhood-based CF](undefined-1/neighborhood-based-cf.md)
