@@ -19,8 +19,7 @@ def prec(recommendations, ground_truth):
 
 class LatestNNRecommender(object):
     def __init__(
-        self, user_ntype, item_ntype, user_to_item_etype, timestamp, batch_size
-    ):
+        self, user_ntype, item_ntype, user_to_item_etype, timestamp, batch_size):
         self.user_ntype = user_ntype
         self.item_ntype = item_ntype
         self.user_to_item_etype = user_to_item_etype

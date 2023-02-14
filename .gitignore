@@ -1,7 +1,7 @@
 *.pth
 *.0
 *.json
-
+*.ipynb_checkpoints
 *.pyc
 __pycache__/
 
